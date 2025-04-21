@@ -6,6 +6,7 @@ import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 import { useEffect } from "react";
 import "keen-slider/keen-slider.min.css";
+import Link from "next/link";
 
 const services = [
   {
@@ -98,12 +99,12 @@ export default function ServiceDetailPage() {
 
         {/* Back Button */}
         <div className="text-center mt-10">
-          <a
+          <Link
             href="/services"
             className="inline-block bg-[var(--color-orange)] text-white px-6 py-3 rounded font-medium hover:opacity-90 transition"
           >
             Back to Services
-          </a>
+          </Link>
         </div>
       </section>
     </div>

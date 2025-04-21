@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
 
@@ -46,12 +47,12 @@ export default function HomePage() {
         <p className="mb-6">
           Let’s talk about how we can help bring your space to life.
         </p>
-        <a
+        <Link
           href="/contact"
           className="inline-block bg-[var(--color-orange)] text-white px-6 py-3 rounded hover:opacity-90 transition font-medium"
         >
           Contact Us
-        </a>
+        </Link>
       </section>
     </div>
   );

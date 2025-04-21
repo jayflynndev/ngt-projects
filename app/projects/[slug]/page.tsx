@@ -5,6 +5,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const projects = [
   {
@@ -96,12 +97,12 @@ export default function ProjectDetailPage() {
         <p className="mt-4 whitespace-pre-line">{project.description}</p>
       </section>
       <div className="text-center mt-10">
-        <a
+        <Link
           href="/projects"
           className="inline-block bg-[var(--color-orange)] text-white px-6 py-3 rounded font-medium hover:opacity-90 transition"
         >
           See More Projects
-        </a>
+        </Link>
       </div>
     </div>
   );
